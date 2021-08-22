@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Macbook shop</title>
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <main class="grid grid-cols-2 ">
+        <section class="mac-img ml-96">
+            <img src="images/mac.png" alt="">
+        </section>
+        <section>
+            <div>
+                <h1 class="text-4xl font-bold">Customize your Blue 24-inch <br> iMac with Apple M1 Chip</h1>
+            </div>
+            <div class="mt-5">
+                <p>Apple M1 chip with 8.0core CPU with 4 performance comes and 4 efficiency <br>cores, 7 core GPU ,and
+                    16-core Nueral engine 8GB ,unified memory 256GB <br>SSD storage Two Thunderbolt /USB 4 points=Magic
+                    mouse Magic Key board - <br> US English</p>
+            </div>
+            <div class="mt-10">
+                <h4 class="text-lg font-bold">Memory</h4>
+                <button id="memory-slot-1" class="border 2  rounded-md px-2 py-2">8 Gb Unified memory</button>
+                <button id="memory-slot-2" class="border 2  rounded-md px-2 py-2">16 Gb Unified memory</button>
+            </div>
+            <div class="mt-10">
+                <h4 class="text-lg font-bold">Storage</h4>
+                <button id="first-storage" class="border 2  rounded-md px-2 py-2">256 Gb SSD storage</button>
+                <button id="second-storage" class="border 2  rounded-md px-2 py-2">512 Gb SSD storage</button>
+                <button id="third-storage" class="border 2  rounded-md px-2 py-2">1 TB SSD storage</button>
+            </div>
+            <div class="mt-10">
+                <h4 class="text-lg font-bold">Choose your Delivery Option</h4>
+                <button id="free-delivery" class="border 2  rounded-md px-2 py-2">Friday, Aug 25 Free Prime
+                    Delivery</button>
+                <button id="delivery-with-charge" class="border 2  rounded-md px-2 py-2">Friday, Aug 21 Delivery charge
+                    21$</button>
+            </div>
+            <div class="mt-10">
+                <div class="grid grid-cols-4 border-b-2">
+                    <h5 class="text-base font-bold">Best Price</h5>
+                    <h5 class="text-base font-bold">$<span id="best-price">1299</span></h5>
+                </div>
+                <div class="grid grid-cols-4 border-b-2">
+                    <h5 class="text-base font-bold">Extra Memory Cost</h5>
+                    <h5 class="text-base font-bold">$<span id="memory-cost">0</span> </h5>
+                </div>
+                <div class="grid grid-cols-4 border-b-2">
+                    <h5 class="text-base font-bold">Extra Storage Cost</h5>
+                    <h5 class="text-base font-bold">$<span id="storage-cost">0</span></h5>
+                </div>
+                <div class="grid grid-cols-4 border-b-2">
+                    <h5 class="text-base font-bold">Delivery Charge</h5>
+                    <h5 class="text-base font-bold">$<span id="delivery-cost">0</span></h5>
+                </div>
+                <div class="grid grid-cols-4 border-b-2">
+                    <h5 class="text-base font-bold">Total Price</h5>
+                    <h5 class="text-base font-bold">$<span id="total-price">1299</span> </h5>
+                </div>
+                <div class="mt-5">
+                    <h4 class="text-xs font-bold">Add Promo Code</h4>
+                    <input type="text">
+                    <button class="border 2  rounded-md px-4 py-1 bg-red-400 text-white">Apply</button>
+                </div>
+
+            </div>
+
+        </section>
+    </main>
+    <hr>
+    <h2 class="text-xl font-bold text-center">Total: $1299</h2>
+    <script src="js/macbook.js"></script>
+</body>
+
+</html>
