@@ -55,7 +55,7 @@
                     <h5 class="text-base font-bold">Extra Storage Cost</h5>
                     <h5 class="text-base font-bold">$<span id="storage-cost">0</span></h5>
                 </div>
-                <div class="grid grid-cols-4 border-b-2">
+                <div class="grid grid-cols-4 border-b-2 border-black">
                     <h5 class="text-base font-bold">Delivery Charge</h5>
                     <h5 class="text-base font-bold">$<span id="delivery-cost">0</span></h5>
                 </div>
@@ -63,10 +63,10 @@
                     <h5 class="text-base font-bold">Total Price</h5>
                     <h5 class="text-base font-bold">$<span id="total-price">1299</span> </h5>
                 </div>
-                <div class="mt-5">
+                <div class="mt-5 mb-2">
                     <h4 class="text-xs font-bold">Add Promo Code</h4>
-                    <input type="text">
-                    <button class="border 2  rounded-md px-4 py-1 bg-red-400 text-white">Apply</button>
+                    <input id="kupon-code" class="border block border-gray-400 mb-4 px-1 rounded" type="text">
+                    <button id="apply-btn" class="border 2  rounded-md px-4 py-1 bg-red-400 text-white">Apply</button>
                 </div>
 
             </div>
@@ -74,7 +74,7 @@
         </section>
     </main>
     <hr>
-    <h2 class="text-xl font-bold text-center">Total: $1299</h2>
+    <h2 class="text-xl font-bold text-center">Total: $<span id="final-total">1299</span></h2>
     <script src="js/macbook.js"></script>
 </body>
 

@@ -7,11 +7,27 @@ function updateTotal() {
     totalPrice.innerText = totalCost;
 
 }
+function verifyCupon() {
+    if (kuponCodeInput = "stevekaku") {
+        const finalTotalCost = totalCost / 20;
+    }
+    finalTotalinput.innerText = finalTotalCost;
+}
+
+
+
+const totalPrice = document.getElementById('total-price');
+const finalTotalinput = document.getElementById('final-total');
+
+
+
+
 
 const bestPrice = document.getElementById('best-price');
 
 const memoryInput = document.getElementById('memory-cost');
 document.getElementById('memory-slot-2').addEventListener('click', function () {
+    console.log("hello")
     memoryInput.innerText = "180"
     updateTotal()
 });
@@ -42,5 +58,11 @@ document.getElementById('delivery-with-charge').addEventListener('click', functi
     updateTotal()
 });
 
-const totalPrice = document.getElementById('total-price');
+document.getElementById('apply-btn').addEventListener('click', function () {
+    const kuponCode = document.getElementById('kupon-code');
+    const kuponCodeInput = kuponCode.value
+    verifyCupon();
+    kuponCodeInput.value = '';
+})
+
 
